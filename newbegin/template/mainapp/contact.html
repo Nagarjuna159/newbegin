@@ -29,12 +29,20 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'css1/util.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css1/main.css' %}">
 <!--===============================================================================================-->
+<link rel="stylesheet" href="{% static 'css/custom-bs.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/line-icons/style.css' %}">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">  
 </head>
 <body>
 
 
-	{% csrf_token %}
+	
 	<div class="container-contact100">
+		
 		<div class="wrap-contact100">
 			<form class="contact100-form validate-form" method="POST">
 				{% csrf_token %}

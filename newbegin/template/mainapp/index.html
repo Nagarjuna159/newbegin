@@ -48,18 +48,16 @@
           <nav class="mx-auto site-navigation">
             <ul class="site-menu js-clone-nav d-none d-lg-block">
               <li><a href="#" class="nav-link active">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Projects</a></li>
+              <li><a href="{% url 'about' %}">About</a></li>
+              <li><a href="#">AI-ML</a></li>
               <li class="has-children">
-                <a href="#">Trainings</a>
+                <a href="{% url 'python_web' %}">Courses</a>
                 <ul class="dropdown">
-                  <li><a href="#">Python Web Development</a></li>
-                  <li><a href="#">Java Web Development</a></li>
-                  <li><a href="#">Full Stack Training</a></li>
-                  <li><a href="#">Android Development</a></li>
-                  <li><a href="#">Ios Development</a></li>
-                  <li><a href="#">TrainedGrad1</a></li>
-                  <li><a href="#">TrainedGrad2</a></li>
+                  <li><a href="{% url 'python_web' %}">Python Web Development</a></li>
+                  <li><a href="{% url 'java' %}">Java Web Development</a></li>
+                  <li><a href="{%  url 'fullstack' %}">Full Stack Training</a></li>
+                  <li><a href="{% url 'javapy' %]">Python, Java Training</a></li>
+                  
                 </ul>
               </li>
               <li><a href="#">Careers</a></li>
@@ -168,6 +166,52 @@
         <div class="row">
           <div class="col-12 text-center">
             <a href="#" class="btn btn-primary btn-md">View All Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="site-section services-section bg-light block__62849" id="services-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade">
+            <h3 class="section-title-sub text-primary">Our</h3>
+            <h2 class="section-title mb-3" style="color: rgb(109, 7, 7);">Unique Training programs</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
+
+            <a href="#" class="block__16443 text-center d-block">
+              
+              <h3>Python Web Development</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis, pariatur harum labore aperiam assumenda.</p>
+            </a>
+
+          </div>
+          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
+            
+            <a href="#" class="block__16443 text-center d-block">
+              
+              <h3>Full Stack Training</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis, pariatur harum labore aperiam assumenda.</p>
+            </a>            
+
+          </div>
+          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
+            
+            <a href="#" class="block__16443 text-center d-block">
+              
+              <h3>Python, Java, Sql (Combination)</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis, pariatur harum labore aperiam assumenda.</p>
+            </a>            
+
+          </div>
+          
+        </div>
+
+        <div class="row">
+          <div class="col-12 text-center">
+            <a href="#" class="btn btn-danger btn-md">More Programs</a>
           </div>
         </div>
       </div>
