@@ -1,6 +1,6 @@
-from django.urls import path
+from django.urls import path,include
 from mainapp import views
-appname = 'mainapp'
+
 urlpatterns=[
     path('',views.index_view,name='index'),
     path('contact',views.contact_view,name='contact'),
@@ -10,5 +10,9 @@ urlpatterns=[
     path('fullstack',views.fullstack_view,name="fullstack"),
     path('java',views.java_view,name='java'),
     path('thankyou',views.thankyou_view,name='thankyou'),
-    path('Enroll',views.enquire_course_view,name='enroll')
+    path('Enroll',views.enquire_course_view,name='enroll'),
+    path('quiz',views.quiz_view,name='quiz'),
+    path('answers',views.answers_view,name='answers'),
+    path('signup',views.signup_view,name='signup'),
+    path('accounts/',include('django.contrib.auth.urls'),name='login'),
 ]

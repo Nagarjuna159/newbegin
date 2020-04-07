@@ -80,19 +80,19 @@
         <h3 class="title"> Enroll Course</h3>
         <form method="POST" action="/thankyou">
             {% csrf_token %}
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name">
-            <label for = "select_course">Select Course</label>
-            <select>
-                <option>Python Web Development</option>
-                <option>Java Web Development</option>
-                <option>Full Stack Training</option>
-                <option>Java & Python</option>
+            <label for="id_name">Name:</label>
+            <input type="text" name="name" placeholder="Enter your name" id="id_name">
+            <label for = "id_select_course">Select Course</label>
+            <select name="select_course" id="id_select_course">
+                <option value="Python Web Development">Python Web Development</option>
+                <option value="Java Web Development">Java Web Development</option>
+                <option value="Full Stack Training">Full Stack Training</option>
+                <option value="Java & Python">Java & Python</option>
             </select><br>
-            <label for = "email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email">
-            <label for = "phone">Mobile Number</label>
-            <input type="number" id="phone" name="phone" placeholder="Enter your mobile number">
+            <label for = "id_email">Email</label>
+            <input type="email" name="email" placeholder="Enter your email" id="id_email">
+            <label for = "id_phone">Mobile Number</label>
+            <input type="number" name="phone" placeholder="Enter your mobile number" id="id_phone">
             <button type="submit" class="btn btn-danger">submit</button>
         </form>
     </div>
